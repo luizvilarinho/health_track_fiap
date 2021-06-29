@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--Bootstrap icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<!--Google icons and fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+<!--project styles-->
+<link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body id="main">
+    <nav id="health-menu" class="navbar navbar-expand-lg navbar-dark login">
+		<div class="container">
+		  <a class="navbar-brand" href="login.html">Health Track</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  	<div id="logged-user-mobile" class="hide-monitor">
+					<div  class="row">
+						<div class="col-sm-8">
+							<i class="material-icons">account_circle</i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 user">Vanessa Pereira</div>
+					</div>
+				</div>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="login.html">
+                        <i class="material-icons">
+                            login
+                        </i>
+						Login
+					</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link active" href="registrar.html">
+                        <i class="material-icons">
+                            app_registration
+                        </i>
+						Registrar
+					</a>
+				</li>
+		  </div>
+		</div>
+	</nav>
+		<div id="main-login" class="container">
+					
+                <div class="row titulo">
+                    <div class="col-12">login</div>
+                </div>
+                <form method="POST" class="" >
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="data-pesagem" class="form-label">e-mail</label>
+                            <input type="email" class="form-control" id="email">
+                            <div  class="form-text">insira seu e-mail</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="senha" class="form-label">senha</label>
+                            <input type="password" class="form-control" id="senha">
+                            <div  class="form-text">digite sua senha</div>
+                          </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                             <a type="submit" href="index.html" class="btn btn-primary">Entrar</a>
+                        </div>
+                    </div>
+                </form>
+
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/scripts.js"></script>
+</html>

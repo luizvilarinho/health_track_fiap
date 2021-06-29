@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+:root {
+    --hot: #EE6A59;
+    --warm: #F9AC67;
+    --darkblue:#3A3F58;
+    --neutral: #ECE6CD;
+    --light:#fcfbf8;
+}
+
+body{
+    background-color: var(--neutral);
+    color: var(--darkblue);
+}
+#main .btn-primary{
+    min-width: 60px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+#main .btn-primary:active{
+    font-weight: 300;
+}
+.titulo{
+    font-size: 1.5rem;
+    margin:0.8rem 0;
+    color: var(--darkblue);
+    opacity: .8;
+}
+#health-menu{
+    background-color: var(--darkblue);
+    color:var(--neutral);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+#health-menu .navbar-brand{
+    color: var(--hot);
+    margin-right:10%;
+}
+#health-menu .navbar-nav{
+    width: 80%;
+    justify-content: space-between;
+}
+#health-menu .nav-link{
+    color: var(--neutral);
+}
+#health-menu .nav-link.active{
+    color: var(--warm);
+}
+#health-menu i{
+    vertical-align: middle;
+}
+#health-menu.login .navbar-nav{
+    justify-content: left;
+    padding-right: 2rem;
+}
+.material-icons{
+    font-size: 22px;
+}
+#data-atual{
+    text-align: right;
+}
+
+/* VISUALIZAR ICONES */
+#visualizar .item{
+    display: inline-block;
+    width: auto;
+    /* background-color: var(--warm); */
+    padding: 10px 15px;
+    border: 1px solid #fba095;
+    border-radius: 4px;
+    margin: 0 1rem;
+    text-align: center;
+}
+#visualizar .item:hover{
+    /* background-color: #ff9b43 */
+    color:var(--hot);
+}
+#visualizar .item:active{
+    color:var(--darkblue);
+    border-color:var(--darkblue);
+}
+#visualizar a{
+    text-decoration: none;
+    color:var(--darkblue);
+}
+#visualizar i{
+    vertical-align: middle;
+}
+
+
+#card-peso .card, #card-atividade .card{
+    background-color:var(--light);;
+    color: var(--darkblue);
+}
+#card-peso .card-header, #card-atividade .card-header{
+    padding: 7px 0;
+    width: 85%;
+    margin: 0 auto;
+    background-color: unset;
+}
+#card-peso h6, #card-atividade h6{
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+#card-peso p, #card-atividade p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+#card-peso .round-icon-container, #card-atividade .round-icon-container{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    background-color: var(--darkblue);
+    border-radius: 100%;
+    color: var(--neutral);
+    margin-top: 8px;
+}
+#card-peso .round-icon-container .rounded-icon, #card-atividade .round-icon-container .rounded-icon {
+    margin: 5px 1px 1px 3px;
+    font-size:1.2rem;
+    color:var(--neutral );
+}
+#card-atividade .tipo-atividade{
+    line-height: 17px;
+    padding-left: 8%;
+}
+#card-atividade span{
+    color: var(--darkblue);
+    opacity: 0.8;
+    font-size:0.8rem;
+}
+#card-peso, #card-atividade{
+    margin-bottom:.8rem;
+}
+#cards-container a{
+    width: auto;
+}
+.text-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;;
+}
+.subtitulo{
+    font-size: 1.2rem;
+    margin: 0;
+}
+#main-peso .btn-primary, #main-inserir-peso .btn-primary, #main-login .btn-primary{
+    background-color: var(--warm);
+    border: 0;
+    color: var(--darkblue);
+}
+
+#logged-user-mobile{
+    margin:1rem 0;
+    border-bottom: 1px solid var(--neutral);
+    font-size: 1.5rem;
+    padding:0 0 1.5rem 1rem;
+}
+#logged-user-mobile .material-icons{
+    font-size: 2.5rem;
+}
+
+/* peso.html */
+#main-peso .container-acoes{
+    display: flex;
+    justify-content: space-between;
+}
+#main-peso .container-registro{
+    padding-left:8%;
+}
+
+@media (max-width:990px) {
+    #health-menu li{
+        font-size:1.2rem;
+    }
+    #health-menu li:last-child{
+        margin-bottom:25px;
+    }
+    .hide-mobile{
+        display:none;
+    }
+    #health-menu .navbar-toggler-icon{
+        color:var(--neutral);
+    }
+}
+@media (min-width:991px){
+    .hide-monitor{
+        display:none;
+    }
+}
